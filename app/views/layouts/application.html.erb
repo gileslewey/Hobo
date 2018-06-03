@@ -3,17 +3,21 @@
   <head>
     <title>Hobo</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-<nav class=”navbar navbar-default navbar-fixed-top”>
-  <div class=”container-fluid”>
-  </div>
-</nav>
-    <%= render 'shared/nav' %>
+    <div class="page-wrap">
+      <nav class="navbar" style="background-color: whitesmoke;">
+        <ul>
+         <li><%= render 'shared/nav' %></li>
+        </ul>
+      </nav>
+    </div>
+    <h1 class="hobo-text">Hobo Nickel Coins</h1>
+    <%= image_tag("hobocoin.jpg", class: "img-responsive coin-image") %>
     <%= yield %>
   </body>
 </html>

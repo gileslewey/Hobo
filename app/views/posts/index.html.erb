@@ -1,6 +1,12 @@
-<h1>index</h1>
 
-<% @posts.each do |post| %>
-  <h1><%= link_to "post.title"%></h1>
-  <p><%= post.content %></p>
-<% end %>
+<div class="container">
+
+
+
+    <% @posts.each do |post| %>
+      <h1><%= post.title %></h1>
+      <p><%= post.content %></p>
+    <% end %>
+
+
+</div>

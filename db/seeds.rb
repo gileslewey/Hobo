@@ -5,8 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Category.create(name: 'Early altered coins (1750s - 1913)')
-Category.create(name: 'Classic old hobo nickels (1913 - 1940)')
-Category.create(name: 'Later old hobo nickels (1940 - 1980)')
-Category.create(name: 'Modern hobo nickels (since 1980)')
-Category.create(name: 'The Famous Indian Head nickel')
+Category.create(name: 'Early altered coins')
+Category.create(name: 'Classic hobo nickels')
+Category.create(name: 'Later hobo nickels')
+Category.create(name: 'Modern hobo nickels')
