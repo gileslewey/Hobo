@@ -8,4 +8,5 @@
 Category.create(name: 'Early altered coins (1750s - 1913)')
 Category.create(name: 'Classic old hobo nickels (1913 - 1940)')
 Category.create(name: 'Later old hobo nickels (1940 - 1980)')
-Category.create(name: 'EModern hobo nickels (since 1980)')
+Category.create(name: 'Modern hobo nickels (since 1980)')
+Category.create(name: 'The Famous Indian Head nickel')
