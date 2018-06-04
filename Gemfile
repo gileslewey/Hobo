@@ -34,6 +34,7 @@ gem 'bootstrap-sass', '~> 3.3.5'
 group :production do
   # PostgreSQL for Heroku
   gem 'pg', '~> 0.20'
+  gem 'rails_12factor', '0.0.2'
 end
 
 group :development, :test do
