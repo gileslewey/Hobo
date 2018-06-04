@@ -1,5 +1,9 @@
 {
   "name": "Hobo",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.10.2",
+    "webpack-dev-server": "^3.1.4"
+  }
 }
