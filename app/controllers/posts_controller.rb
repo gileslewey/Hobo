@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
-
   before_action :find_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate, only: [:admin, :new, :create, :edit, :update, :destroy]
+
 
   def index
     if params[:category].blank?
@@ -10,6 +11,10 @@ class PostsController < ApplicationController
       @category_id = Category.find_by(name: params[:category]).id
       @posts = Post.where(category_id: @category_id).order("created_at DESC")
     end
+  end
+
+  def admin
+   redirect_to root_path if authenticate
   end
 
   def show
@@ -45,6 +50,7 @@ class PostsController < ApplicationController
      redirect_to root_path
   end
 
+
 private
 
   def post_params
@@ -54,5 +60,10 @@ private
   def find_post
     @post = Post.find(params[:id])
   end
-
 end
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+       username == "test" && password == "test"
+    end
+  end

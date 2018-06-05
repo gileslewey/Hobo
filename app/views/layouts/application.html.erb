@@ -3,22 +3,28 @@
   <head>
     <title>Hobo</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <%= csrf_meta_tags %>
-
   </head>
 
   <body>
-    <div class="page-wrap">
-      <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: whitesmoke;">
-        <ul>
-         <li><%= render 'shared/nav' %></li>
-        </ul>
+    <div class="container-fluid">
+
+      <nav class="navbar navbar-dark bg-primary">
+        <div class="row">
+          <div class="col-md-6">
+            <li class="hobo"><strong>The Hobo Nickel</strong></li>
+          </div>
+          <div class="col-md-6">
+            <%= render 'shared/nav' %>
+          </div>
+        </div>
       </nav>
-    </div>
-    <h1 class="hobo-text">Hobo Nickel Coins</h1>
+
     <%= image_tag("hobocoin.jpg", class: "img-responsive coin-image") %>
     <%= yield %>
   </body>
