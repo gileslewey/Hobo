@@ -52,7 +52,7 @@ Top four nickels are by George Washington “Bo”
 Hughes. The bottom two are by Bert Wiegand.
 did not produce as large a body of work (carved
 nickels) as “Bo,” but the ones that have survived
-are all of Superior quality.'
+are all of Superior quality.')
 
 Post.create(title: 'Collecting', category_id: '3', content: 'The value of hobo nickels to collectors is
 primarily based on the quality and subject of the
@@ -64,7 +64,7 @@ Themes other than the traditional "bearded man
 wearing a hat" seem to be more collectible, as are
 reverse carvings. Old or classic carvings on high
 mint state nickels are highly desirable. Carvings
-by Bo and Bert always command a premium.'
+by Bo and Bert always command a premium.')
 
 Post.create(title: 'Modern', category_id: '4', content: 'In 1992 The Original Hobo Nickel Society was
 formed for “all persons and organizations
@@ -72,4 +72,4 @@ interested in original hobo nickels.” The society
 now also supports collecting of modern or
 contemporary carvings, many of which are created
 using power assist tools and microscopes unlike the
-carvings of a bygone era.'
+carvings of a bygone era.')
