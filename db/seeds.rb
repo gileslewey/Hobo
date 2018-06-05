@@ -9,7 +9,7 @@ Category.create(name: 'History')
 Category.create(name: 'Carvers')
 Category.create(name: 'Collecting')
 Category.create(name: 'Modern Carving')
-Post.create(title: 'The Origin of Hobo Nickels', category_id: '2', content: 'We’re not really sure how the name “hobo
+Post.create(title: 'The Origin of Hobo Nickels', category_id: '1', content: 'We’re not really sure how the name “hobo
 nickel” came into common use to describe such
 altered coins. Among the possible explanations is
 one from World War I. More than three million
@@ -41,3 +41,35 @@ carve designs on an Indian Head nickel and then
 trade them for a meal or place to spend the night or
 just something to do to while away the hours in a
 hobo jungle.')
+
+Post.create(title: 'Bo', category_id: '2', content: 'One of the best known early carvers was a hobo
+named George Washington “Bo” Hughes. “Bo”
+had originally been taught by another hobo carver
+named Bertram “Bert” Wiegand. “Bo” produced a
+large body of work, but carvings produced after a
+hand injury in 1957 were of lesser quality. Bert
+Top four nickels are by George Washington “Bo”
+Hughes. The bottom two are by Bert Wiegand.
+did not produce as large a body of work (carved
+nickels) as “Bo,” but the ones that have survived
+are all of Superior quality.'
+
+Post.create(title: 'Collecting', category_id: '3', content: 'The value of hobo nickels to collectors is
+primarily based on the quality and subject of the
+carving or engraving on the nickel. The better the
+carving, the higher price the nickel will yield. High
+quality older carvings generally are more desirable
+than contemporary carvings of similar quality.
+Themes other than the traditional "bearded man
+wearing a hat" seem to be more collectible, as are
+reverse carvings. Old or classic carvings on high
+mint state nickels are highly desirable. Carvings
+by Bo and Bert always command a premium.'
+
+Post.create(title: 'Modern', category_id: '4', content: 'In 1992 The Original Hobo Nickel Society was
+formed for “all persons and organizations
+interested in original hobo nickels.” The society
+now also supports collecting of modern or
+contemporary carvings, many of which are created
+using power assist tools and microscopes unlike the
+carvings of a bygone era.'
